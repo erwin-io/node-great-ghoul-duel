@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Ghoul Duel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>The Great Ghoul Duel</h1>
+    <div id="game">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+    <div id="scoreboard">
+        <div>Green Team: <span id="greenScore">0</span></div>
+        <div>Purple Team: <span id="purpleScore">0</span></div>
+        <div>Time Left: <span id="timer">300</span> seconds</div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
